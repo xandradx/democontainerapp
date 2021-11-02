@@ -22,7 +22,7 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: democontainerapp
-        tags: latest ${{ github.sha }} $GIT_TAG
+        tags: latest ${{ github.sha }} ${{ env.GIT_TAG }}
         dockerfiles: |
           ./Dockerfile
 
