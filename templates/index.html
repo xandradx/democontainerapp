@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}This is an example page{% endblock %}
+
+{% block navbar %}
+    <div class="container">
+        <div class="header clearfix">
+
+        <h3 class="text-muted">Sample Web App Python</h3>
+        </div>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+        <h1>I'm running on host {{ hostname }}</h1>
+        <h2>with ip {{ ip }}</h2>
+      </div>
+</div>
+{% endblock %}
