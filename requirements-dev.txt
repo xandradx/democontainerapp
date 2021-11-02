@@ -1,4 +1,4 @@
-elask
+Flask
 Flask-Bootstrap
 netifaces
 unittest-xml-reporting
