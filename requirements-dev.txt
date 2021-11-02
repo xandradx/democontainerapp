@@ -1,3 +1,4 @@
 elask
 Flask-Bootstrap
 netifaces
+unittest-xml-reporting
