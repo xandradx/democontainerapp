@@ -6,6 +6,8 @@ on:
 
 
 jobs:
+  test:
+    uses: ./.github/workflows/tests.yml
   build:
     name: Build and push image
     runs-on: ubuntu-22.04
