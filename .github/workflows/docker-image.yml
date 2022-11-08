@@ -5,10 +5,15 @@ on:
     - 'v*.*'
 
 
+stages:
+  - test
+  - package
+
 jobs:
   test:
     uses: ./.github/workflows/tests.yml
   build:
+    needs: test
     name: Build and push image
     runs-on: ubuntu-22.04
 
