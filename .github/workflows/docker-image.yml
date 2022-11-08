@@ -5,10 +5,6 @@ on:
     - 'v*.*'
 
 
-stages:
-  - test
-  - package
-
 jobs:
   test:
     uses: ./.github/workflows/tests.yml
