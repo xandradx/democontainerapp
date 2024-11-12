@@ -1,5 +1,5 @@
 FROM python:slim as BUILDER
-RUN apt-get update && apt-get install -y gcc && \
+RUN apt-get update && apt-get install -y --no-install-recommends gcc  python3-dev  && \
     pip install --upgrade pip && \
     python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
